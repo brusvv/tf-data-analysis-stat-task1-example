@@ -8,9 +8,6 @@ def solution(x: np.array) -> float:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    t=10
-    n = len(x)
-    mu = 7
-    for i in range(n):
-        x[i] = (x[i] + 7) / t 
-    return x.mean() # Ваш ответ
+    total_lamps = np.sum(x)
+    lambda_ = total_lamps / (len(x) * 39)
+    return lambda_ # Ваш ответ
